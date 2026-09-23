@@ -7,14 +7,14 @@
   <meta name="description" content="James A. Micali is an FP&A and corporate finance executive with 11 years driving margin expansion, cost optimization, and strategic planning across manufacturing and supply chain operations.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <header class="site-header">
     <div class="wrap header-inner">
-      <a class="brand" href="#top">JM</a>
+      <a class="brand" href="#top" id="brand-home">JAM</a>
       <nav class="site-nav" aria-label="Primary">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
@@ -30,7 +30,8 @@
     <section class="hero">
       <div class="wrap">
         <p class="eyebrow">FP&amp;A &amp; Corporate Finance Executive</p>
-        <h1>James A. Micali, <span class="nowrap">MBA, PMP</span></h1>
+        <h1>James A. Micali</h1>
+        <p class="titles">MBA, PMP</p>
         <p class="lede">Finance leader with a proven ability to drive financial performance across $200M+ manufacturing and supply-chain operations — 11 years of margin expansion, cost optimization, and strategic planning, delivering $100M+ in cumulative cost improvements and margin gains.</p>
         <div class="hero-cta">
           <a class="btn" href="https://www.linkedin.com/in/jamicali" target="_blank" rel="noopener">LinkedIn Profile</a>
@@ -217,6 +218,14 @@
       <p>© 2026 James A. Micali · Beaverton, Oregon</p>
     </div>
   </footer>
+
+  <script>
+    // Scroll the icon click all the way to the very top of the page.
+    document.getElementById('brand-home').addEventListener('click', function (e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
 
 </body>
 </html>
